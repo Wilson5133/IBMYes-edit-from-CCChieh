@@ -25,7 +25,7 @@ jobs:
         ./IBM_Cloud_CLI/ibmcloud login -a "https://cloud.ibm.com" -r "us-south" -u "$IBM_ACCOUNT" -p "$IBM_PWD"
     - name: Target IBM Cloud
       run: |
-        ./IBM_Cloud_CLI/ibmcloud cf install -f -v 6.15.0
+        ./IBM_Cloud_CLI/ibmcloud cf install -f -v 6.51.0
         ./IBM_Cloud_CLI/ibmcloud target --cf
     - name: Restart IBM Cloud
       env:
